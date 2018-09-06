@@ -1,8 +1,10 @@
+import os
 class Config:
 
     '''
     class config
     '''
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
 class ProdConfig(Config):
     '''
@@ -23,3 +25,8 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+
+config_options = {
+'development':DevConfig,
+'production':ProdConfig
+}
