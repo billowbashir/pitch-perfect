@@ -7,6 +7,7 @@ class Config:
     '''
     # app.config['SECRET_KEY'] ='1234'
     # SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://bashir:bashiir@localhost/pitch_perfect
 
 class ProdConfig(Config):
     '''
