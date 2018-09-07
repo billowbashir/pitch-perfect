@@ -1,8 +1,8 @@
-from flask import render_template
+from flask import render_template, url_for
 from . import auth
 from .forms import LoginForm
 
-@main.route('/login/')
+@auth.route('/login')
 def login():
     login_form = LoginForm()
 
