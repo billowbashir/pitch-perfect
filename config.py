@@ -1,10 +1,12 @@
 import os
+
 class Config:
 
     '''
     class config
     '''
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    # app.config['SECRET_KEY'] ='1234'
+    # SECRET_KEY = os.environ.get('SECRET_KEY')
 
 class ProdConfig(Config):
     '''
