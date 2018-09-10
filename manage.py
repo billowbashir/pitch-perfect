@@ -11,8 +11,7 @@ manager.add_command('server',Server)
 
 manager.add_command('db',MigrateCommand)
 
-# app.config['SECRET_KEY'] ='1234'
-# app.config['SQLALCHEMY_DATABASE_URI'] ='postgresql+psycopg2://bashir:bashiir@localhost/pitch_perfect'
+
 
 @manager.shell
 def make_shell_context():
