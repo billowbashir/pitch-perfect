@@ -2,6 +2,36 @@
 {% import 'bootstrap/wtf.html' as wtf%}
 {% block content %}
 <div class="container">
-
+<div class="row category">
+<div class="col-md-4"></div>
+<div class="col-md-4"><h1>inspiration</h1></div>
+<div class="col-md-4"></div>
 </div>
+<div class="row category">
+<div class="col-md-4"></div>
+<div class="col-md-4" text-align='centre'><h1>life hacks</h1></div>
+<div class="col-md-4"></div>
+</div>
+<div class="row category" >
+<div class="col-md-4"></div>
+<div class="col-md-4" text-align='centre'><h1>tech</h1></div>
+<div class="col-md-4"></div>
+</div>
+<div class="row category">
+<div class="col-md-4"></div>
+<div class="col-md-4" ><h1>funny</h1></div>
+<div class="col-md-4"></div>
+</div>
+</div>
+<style>
+.category{
+  height: 100px;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+}
+.category :hover{
+;
+}
+</style>
 {% endblock %}
