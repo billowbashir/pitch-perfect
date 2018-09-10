@@ -9,12 +9,10 @@ from .. import db
 @main.route('/')
 def index():
     pitches=Pitch.query.all()
-    for pitch in pitches:
-
-        uname=User.query.filter_by(id=pitch.user_id).first()
 
 
-    return render_template('index.html',entries=pitches,uname=uname)
+
+    return render_template('index.html',entries=pitches)
 
 
 @main.route('/pitch',methods=['GET','POST'])
