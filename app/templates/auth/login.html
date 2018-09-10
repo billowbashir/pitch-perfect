@@ -2,6 +2,7 @@
 {% import 'bootstrap/wtf.html' as wtf%}
 {% block content %}
 <div class="container">
+  <p class="flash">You need to be logged in to post a pitch or comment <br>Sign up if you dont have an account</p>
     <div class="row">
       <div class= "col-md-2"> </div>
       <div class="col-md-8">
@@ -12,4 +13,10 @@
      <div clas="col-md-2"> </div>
     </div>
 </div>
+<style>
+  .flash{
+    color:red;
+    text-align: center;
+  }
+</style>
 {% endblock %}
