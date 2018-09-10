@@ -6,7 +6,8 @@ from .. import db
 
 @main.route('/')
 def index():
-    return render_template('index.html')
+    pitches=Pitch.query.all()
+    return render_template('index.html',pitches=pitches)
 
 
 @main.route('/pitch',methods=['GET','POST'])

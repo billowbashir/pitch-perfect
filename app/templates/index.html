@@ -23,12 +23,22 @@
 <div class="col-md-4"></div>
 </div>
 </div>
+{%for pitch in pitches%}
+<div class='col-md-4 pitch'>
+  <h3>category:{{pitch.category}}</h3>
+  <li>{{pitch.pitch}}</li>
+  <li>{{pitch.user.username}}</li>
+</div>
+{%endfor%}
 <style>
 .category{
   height: 100px;
   text-align: center;
   border-color: black;
   border-style: solid;
+}
+.pitch{
+  text-align: centre;
 }
 
 </style>
