@@ -8,3 +8,9 @@ the site allows a user to create an account ,write a pitch and have it downvoted
 To run the application you need to have installed the following: Python3.6, flask-bootstrap, flask-wtf forms and flask-script
 ### likely bugs
 Currently the application has no known bugs but if you come across any issues feel free to contact me from the email address that will be provided below.
+### technologies used
+The technologies used to build the application are:
+1. Python
+2. Flask
+3. Bootstrap4
+4. css
