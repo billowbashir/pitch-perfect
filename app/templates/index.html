@@ -1,7 +1,7 @@
 {%extends 'base.html'%}
 {% import 'bootstrap/wtf.html' as wtf%}
 {% block content %}
-<div class="container">
+<!-- <div class="container">
 <div class="row category">
 <div class="col-md-4"></div>
 <div class="col-md-4"><h1>inspiration</h1></div>
@@ -22,12 +22,16 @@
 <div class="col-md-4" ><h1>funny</h1></div>
 <div class="col-md-4"></div>
 </div>
+</div> -->
+<div class="heading">
+<h2>sign up to post your own pitch today!</h2>
+<h3>sample pitches</h3>
 </div>
-{%for pitch in pitches%}
+{%for entry in entries%}
 <div class='col-md-4 pitch'>
-  <h3>category:{{pitch.category}}</h3>
-  <li>{{pitch.pitch}}</li>
-  <li>{{pitch.user.username}}</li>
+  <h3>category:{{entry.category}}</h3>
+  <li>{{entry.pitch}}</li>
+  <!-- <li>{{uname}}</li> -->
 </div>
 {%endfor%}
 <style>
@@ -39,6 +43,10 @@
 }
 .pitch{
   text-align: centre;
+}
+.heading {
+  text-align: center;
+  color: lightblue;
 }
 
 </style>

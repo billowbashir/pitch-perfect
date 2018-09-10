@@ -7,7 +7,9 @@ from .. import db
 @main.route('/')
 def index():
     pitches=Pitch.query.all()
-    return render_template('index.html',pitches=pitches)
+    # for pitch in pitches:
+    #     uname=User.query.get_or_404(pitch.id).username
+    return render_template('index.html',entries=pitches)
 
 
 @main.route('/pitch',methods=['GET','POST'])
