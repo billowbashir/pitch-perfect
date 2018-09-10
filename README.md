@@ -14,3 +14,5 @@ The technologies used to build the application are:
 2. Flask
 3. Bootstrap4
 4. css
+### contact details
+feel free to email me at billowbashir@gmail.com incase of any feedback or bugs you face
