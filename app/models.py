@@ -28,3 +28,12 @@ class User(UserMixin,db.Model):
         return check_password_hash(self.pass_secure,password)
     def __repr__(self):
         return f'User {self.username}'
+class Pitch(db.Model):
+    __tablename__='pitches'
+    id=db.Column(db.Integer,primary_key=True)
+    pitch=db.Column(db.String(255))
+    user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
+
+
+
+# class Comment(db.model):
