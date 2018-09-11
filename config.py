@@ -6,7 +6,7 @@ class Config:
     class config
     '''
 
-
+    pass
 
 class ProdConfig(Config):
     '''
