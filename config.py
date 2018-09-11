@@ -6,7 +6,6 @@ class Config:
     class config
     '''
 
-    pass
 
 class ProdConfig(Config):
     '''
@@ -19,12 +18,18 @@ class ProdConfig(Config):
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
-     # email configurations
-    MAIL_SERVER = 'smtp.googlemail.com'
+
+
+
+    DEBUG = True
+
+    MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+
+
 
 
 class DevConfig(Config):
