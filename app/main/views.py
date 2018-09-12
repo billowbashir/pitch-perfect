@@ -19,7 +19,7 @@ def index():
 def pitch():
     pitch_form=PitchForm()
     if pitch_form.validate_on_submit():
-        pitch=Pitch(category=pitch_form.category.data,pitch=pitch_form.pitch.data,user_id=current_user.id)
+        pitch=Pitch(category=pitch_form.category.data,pitch=pitch_form.pitch.data)
         db.session.add(pitch)
         db.session.commit()
         return redirect(url_for('main.index'))
