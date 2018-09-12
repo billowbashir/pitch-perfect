@@ -13,7 +13,7 @@
 {%for entry in entries%}
 <div class='col-md-4 pitch'>
   <h3>category:{{entry.category}}</h3>
-  <li>{{entry.pitch}}</li>
+<p>{{entry.pitch}} by {{entry.users.username}}</p>
 
   <button><a href="{{url_for('main.comment')}}">comment</a></button><button><i class="fa fa-thumbs-up"></i></button><button><i class="fa fa-thumbs-down"></i></button>
 </div>
